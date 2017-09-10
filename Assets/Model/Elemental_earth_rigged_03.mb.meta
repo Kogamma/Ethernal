@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: 33b2f9b1be7df744ca5c25c81824a481
+timeCreated: 1456323317
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Bodystone_02_joint
+    100002: Bodystone_03_joint
+    100004: Bodystone_tip_joint
+    100006: //RootNode
+    100008: Head_joint
+    100010: Headstone_01_joint
+    100012: Headstone_02_joint
+    100014: Headstone_03_joint
+    100016: Headstone_04_joint
+    100018: Headstone_05_joint
+    100020: Headstone_06_joint
+    100022: joint3
+    100024: joint4
+    100026: Left_arm_01_joint
+    100028: Left_arm_02_joint
+    100030: Left_hand_joint
+    100032: Neck_joint
+    100034: pPlane2
+    100036: Right_arm_01_joint
+    100038: Right_arm_02_joint
+    100040: Right_hand_joint
+    100042: Root_joint
+    400000: Bodystone_02_joint
+    400002: Bodystone_03_joint
+    400004: Bodystone_tip_joint
+    400006: //RootNode
+    400008: Head_joint
+    400010: Headstone_01_joint
+    400012: Headstone_02_joint
+    400014: Headstone_03_joint
+    400016: Headstone_04_joint
+    400018: Headstone_05_joint
+    400020: Headstone_06_joint
+    400022: joint3
+    400024: joint4
+    400026: Left_arm_01_joint
+    400028: Left_arm_02_joint
+    400030: Left_hand_joint
+    400032: Neck_joint
+    400034: pPlane2
+    400036: Right_arm_01_joint
+    400038: Right_arm_02_joint
+    400040: Right_hand_joint
+    400042: Root_joint
+    4300000: pPlane2
+    9500000: //RootNode
+    13700000: pPlane2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

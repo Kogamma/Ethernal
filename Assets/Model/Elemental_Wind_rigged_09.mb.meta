@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: e3c5e55e44cd5f14695a3e06e5f8983a
+timeCreated: 1456390614
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Head_joint
+    100004: Left_arm_01_joint
+    100006: Left_arm_02_joint
+    100008: Left_arm_03_joint
+    100010: Left_arm_04_joint
+    100012: Left_finger1_01_joint
+    100014: Left_finger1_02_joint
+    100016: Left_finger1_03_joint
+    100018: Left_finger1_tip_joint
+    100020: Left_finger2_01_joint
+    100022: Left_finger2_02_joint
+    100024: Left_finger2_03_joint
+    100026: Left_finger2_tip_joint
+    100028: Left_finger3_01_joint
+    100030: Left_finger3_02_joint
+    100032: Left_finger3_03_joint
+    100034: Left_finger3_tip_joint
+    100036: Left_hair_01_joint
+    100038: Left_hair_02_joint
+    100040: Left_hair_03_joint
+    100042: Left_hair_tip_joint
+    100044: mesh
+    100046: Neck_joint
+    100048: Pelvis_joint
+    100050: Right_arm_01_joint
+    100052: Right_arm_02_joint
+    100054: Right_arm_03_joint
+    100056: Right_arm_04_joint
+    100058: Right_finger1_01_joint
+    100060: Right_finger1_02_joint
+    100062: Right_finger1_03_joint
+    100064: Right_finger1_tip_joint
+    100066: Right_finger2_01_joint
+    100068: Right_finger2_02_joint
+    100070: Right_finger2_03_joint
+    100072: Right_finger2_tip_joint
+    100074: Right_finger3_01_joint
+    100076: Right_finger3_02_joint
+    100078: Right_finger3_03_joint
+    100080: Right_finger3_tip_joint
+    100082: Right_hair_01_joint
+    100084: Right_hair_02_joint
+    100086: Right_hair_03_joint
+    100088: Right_hair_tip_joint
+    100090: Root_joint
+    100092: skeleton_grp
+    100094: Waist_joint
+    100096: Windlass_01_joint
+    100098: Windlass_02_joint
+    100100: Windlass_03_joint
+    100102: Windlass_04_joint
+    100104: Windlass_05_joint
+    100106: Windlass_06_joint
+    100108: Windlass_07_joint
+    100110: Windlass_08_joint
+    100112: Windlass_09_joint
+    100114: Windlass_10_joint
+    400000: //RootNode
+    400002: Head_joint
+    400004: Left_arm_01_joint
+    400006: Left_arm_02_joint
+    400008: Left_arm_03_joint
+    400010: Left_arm_04_joint
+    400012: Left_finger1_01_joint
+    400014: Left_finger1_02_joint
+    400016: Left_finger1_03_joint
+    400018: Left_finger1_tip_joint
+    400020: Left_finger2_01_joint
+    400022: Left_finger2_02_joint
+    400024: Left_finger2_03_joint
+    400026: Left_finger2_tip_joint
+    400028: Left_finger3_01_joint
+    400030: Left_finger3_02_joint
+    400032: Left_finger3_03_joint
+    400034: Left_finger3_tip_joint
+    400036: Left_hair_01_joint
+    400038: Left_hair_02_joint
+    400040: Left_hair_03_joint
+    400042: Left_hair_tip_joint
+    400044: mesh
+    400046: Neck_joint
+    400048: Pelvis_joint
+    400050: Right_arm_01_joint
+    400052: Right_arm_02_joint
+    400054: Right_arm_03_joint
+    400056: Right_arm_04_joint
+    400058: Right_finger1_01_joint
+    400060: Right_finger1_02_joint
+    400062: Right_finger1_03_joint
+    400064: Right_finger1_tip_joint
+    400066: Right_finger2_01_joint
+    400068: Right_finger2_02_joint
+    400070: Right_finger2_03_joint
+    400072: Right_finger2_tip_joint
+    400074: Right_finger3_01_joint
+    400076: Right_finger3_02_joint
+    400078: Right_finger3_03_joint
+    400080: Right_finger3_tip_joint
+    400082: Right_hair_01_joint
+    400084: Right_hair_02_joint
+    400086: Right_hair_03_joint
+    400088: Right_hair_tip_joint
+    400090: Root_joint
+    400092: skeleton_grp
+    400094: Waist_joint
+    400096: Windlass_01_joint
+    400098: Windlass_02_joint
+    400100: Windlass_03_joint
+    400102: Windlass_04_joint
+    400104: Windlass_05_joint
+    400106: Windlass_06_joint
+    400108: Windlass_07_joint
+    400110: Windlass_08_joint
+    400112: Windlass_09_joint
+    400114: Windlass_10_joint
+    2300000: mesh
+    3300000: mesh
+    4300000: mesh
+    9500000: //RootNode
+    13700000: mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
