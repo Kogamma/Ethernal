@@ -26,8 +26,6 @@ public class InstantiatePlayers : MonoBehaviour
 
     public Transform[] spawnPoints = new Transform[4];
 
-    public GameObject camera;
-
     public GameObject playersHolder;
 
     public GameObject gameOverImage;
@@ -68,8 +66,6 @@ public class InstantiatePlayers : MonoBehaviour
 
             livesTexts[i].text = MenuManager.howManyLives.ToString();
             elementalHolders[i].GetComponent<ElementalScript>().howManyLivesText = livesTexts[i];
-
-            elementalHolders[i].GetComponent<ElementalScript>().mainCamera = camera;
 
             if (elementalHolders[i].GetComponent<ElementalScript>().ElementalName == "Earth")
                 ElementalScript.elementals[0] = elementalHolders[i];

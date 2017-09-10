@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using XInputDotNetPure;
 using UnityEngine.UI;
 
@@ -11,8 +12,6 @@ public class ElementalScript : MonoBehaviour
     public  GameObject wind;
 
     public static GameObject[] elementals = new GameObject[4];
-
-    public GameObject mainCamera;
 
     public float playerSpeed = 10f;
     public float rotationSpeed = 7f;
@@ -120,7 +119,7 @@ public class ElementalScript : MonoBehaviour
                     // Sets the remaining player to be nr 1 in the ranking
                     PlayerPlacements.playerRank[playerNr - 1] = 0;
                     Cursor.visible = true;
-                    Application.LoadLevel("Game Over Menu");
+                    SceneManager.LoadScene("Game Over Menu");
                 }
             }
 
@@ -190,8 +189,8 @@ public class ElementalScript : MonoBehaviour
                                     if (elementals[i] != null)
                                         elementals[i].GetComponent<EarthquakePlayerShake>().enabled = true;
                                 }
-                                mainCamera.GetComponent<Shake>().enabled = true;
-                                mainCamera.GetComponent<ZoomCamera>().enabled = false;
+                                Camera.main.GetComponent<Shake>().enabled = true;
+                                Camera.main.GetComponent<ZoomCamera>().enabled = false;
                             }
                             else if (ElementalName == "Fire")
                             {

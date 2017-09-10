@@ -136,8 +136,8 @@ public class ChooseCharacter : MonoBehaviour
             InstantiatePlayers.spellIndexes[GetComponent<PointerScript>().playerNr, shoulderButtonIndex - 1] = chosenSpell;
 
             // Sets the indicator text at the position of the spellbutton and also as the child of the button
-            shoulderButtonTexts[shoulderButtonIndex - 1].transform.parent = 
-            this.transform.parent.GetChild(3).transform.GetChild(chosenSpell).transform;
+            shoulderButtonTexts[shoulderButtonIndex - 1].transform.SetParent( 
+            this.transform.parent.GetChild(3).transform.GetChild(chosenSpell).transform);
             shoulderButtonTexts[shoulderButtonIndex - 1].transform.position = shoulderButtonTexts[shoulderButtonIndex - 1].transform.parent.position;
         }
        
@@ -178,7 +178,7 @@ public class ChooseCharacter : MonoBehaviour
         howManySpellsChosen--;            
 
         // Resets the position of the indicator text
-        shoulderButtonTexts[shoulderButtonIndex].transform.parent = shoulderButtonTexts[shoulderButtonIndex].transform.parent.parent;
+        shoulderButtonTexts[shoulderButtonIndex].transform.SetParent(shoulderButtonTexts[shoulderButtonIndex].transform.parent.parent);
         shoulderButtonTexts[shoulderButtonIndex].transform.localPosition = originTextPos[shoulderButtonIndex];
 
         // Resets the shoulder button input

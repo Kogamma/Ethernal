@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using XInputDotNetPure;
-using System.Linq;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
+
+
 
 public class MenuManager : MonoBehaviour
 {
@@ -14,28 +16,28 @@ public class MenuManager : MonoBehaviour
 
     #region Menu Screens
     // The group with the first screen of the menu
-    public GameObject startupMenu; 
+    public GameObject startupMenu;
 
     // The group with the second screen of the menu
-    public GameObject mainMenu;    
-    
+    public GameObject mainMenu;
+
     // The group for the screen showing the controls of the game 
-    public GameObject controlMenu; 
-    
+    public GameObject controlMenu;
+
     // The group for the screen where you choose amount of lives and player amount
     public GameObject playerAmount;
-    
+
     // The group for choosing elementals and spells
-    public GameObject characterSelection;   
-    
+    public GameObject characterSelection;
+
     // Text with instructions 
-    public Text readyText; 
-    
+    public Text readyText;
+
     // The group for choosing which map to play and also start the game
     public GameObject chooseMap;
 
     // The group for the credits screen
-    public GameObject creditsMenu; 
+    public GameObject creditsMenu;
     #endregion
 
 
@@ -67,6 +69,9 @@ public class MenuManager : MonoBehaviour
 
     public GameObject[] canvasWallHolders = new GameObject[3]; // This is a gameobject that holds the walls that block the pointers from going off screen
 
+    [SerializeField]
+    string[] levelNames;
+
     void Start()
     {
         for (int i = 0; i < howManyPlayers; i++)
@@ -86,10 +91,10 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
         // Sets the input of all the controllers
-        state[0] = GamePad.GetState(PlayerIndex.One);
-        state[1] = GamePad.GetState(PlayerIndex.Two);
-        state[2] = GamePad.GetState(PlayerIndex.Three);
-        state[3] = GamePad.GetState(PlayerIndex.Four);
+        for (int i = 0; i < 4; i++)
+        {
+            state[i] = GamePad.GetState((PlayerIndex)i);
+        }
 
         // If player 1 presses B in different situations the screen will change to the new appropriate screen
         if (state[0].Buttons.B == ButtonState.Pressed && prevState[0].Buttons.B == ButtonState.Released)
@@ -380,40 +385,22 @@ public class MenuManager : MonoBehaviour
         Cursor.visible = false;
 
         if (levelIndex == 4)
-            levelIndex = Random.Range(0, 3);
+            levelIndex = Random.Range(0, levelNames.Length - 1);
 
         howManyPlayers = howManyPlayersTemp;
 
-        if (levelIndex == 0)
-        {
-            Application.LoadLevel("Earth Level");
-            GameOverButtons.recentLevel = "Earth Level";
-        }
-        else if (levelIndex == 1)
-        {
-            Application.LoadLevel("Water Level");
-            GameOverButtons.recentLevel = "Water Level";
-        }
-        else if (levelIndex == 2)
-        {
-            Application.LoadLevel("Fire Level");
-            GameOverButtons.recentLevel = "Fire Level";
-        }
-        else if (levelIndex == 3)
-        {
-            Application.LoadLevel("Wind Level");
-            GameOverButtons.recentLevel = "Wind Level";
-        }
+        SceneManager.LoadScene(levelNames[levelIndex] + " Level");
+        GameOverButtons.recentLevel = levelNames[levelIndex] + " Level";
     }
     #endregion
 
     void LateUpdate()
     {
         // Sets the previous frame input state with this frame
-        prevState[0] = GamePad.GetState(PlayerIndex.One);
-        prevState[1] = GamePad.GetState(PlayerIndex.Two);
-        prevState[2] = GamePad.GetState(PlayerIndex.Three);
-        prevState[3] = GamePad.GetState(PlayerIndex.Four);
+        for (int i = 0; i < 4; i++)
+        {
+            prevState[i] = GamePad.GetState((PlayerIndex)i);
+        }
     }
 }
 

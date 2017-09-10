@@ -8,7 +8,6 @@ public class EarthquakePlayerShake : MonoBehaviour
     float timer = 0; // Timer
     bool touchesGround = false; // Are you touching the ground?
     public float timerEnd = 10f; // Timer limit
-    public GameObject mainCamera; // The main camera
     Rigidbody rb; // Rigidbody
 
 
@@ -16,8 +15,6 @@ public class EarthquakePlayerShake : MonoBehaviour
     {
         // Sets the Rigidbody to rb
         rb = GetComponent<Rigidbody>();
-
-        mainCamera = GetComponent<ElementalScript>().mainCamera;
 	}
 
 
@@ -28,8 +25,8 @@ public class EarthquakePlayerShake : MonoBehaviour
         {
             // Stops the Earthquake
             GetComponent<EarthquakePlayerShake>().enabled = false;
-            mainCamera.GetComponent<Shake>().enabled = false;
-            mainCamera.GetComponent<ZoomCamera>().enabled = true;
+            Camera.main.GetComponent<Shake>().enabled = false;
+            Camera.main.GetComponent<ZoomCamera>().enabled = true;
 
             // Resets timer
             timer = 0f;

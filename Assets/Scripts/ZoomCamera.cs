@@ -57,7 +57,7 @@ public class ZoomCamera : MonoBehaviour
             }
             centerPosition /= players.Count;
 
-            position = Vector3.Lerp(position, centerPosition, 5);
+            position = Vector3.Lerp(position, centerPosition, 1f);
 
             // Find the max distance between any two players.
             float maxDistance = float.MinValue;
